@@ -7,8 +7,7 @@
         <methods>
           <include name="afterTest"/>
           <include name="beforeTest"/>
-          <include name="loginTest"/>
-          <include name="signUpTest"/>
+          <include name="signUpTest" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.bookmyroom.testng.ApplicationTest -->
     </classes>

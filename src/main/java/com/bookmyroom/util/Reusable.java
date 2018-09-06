@@ -12,6 +12,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 public class Reusable {
@@ -32,12 +33,18 @@ public class Reusable {
 	//Open URL
 	public void navigateTo(String url)
 	{
+		System.out.println("Url:"+url);
 		driver.get(url);
 	}
 	
 	public void implicitWait() {
 		driver.manage().timeouts().implicitlyWait(Constants.timeInt, TimeUnit.SECONDS);
 	}
+	
+	/*public void explicitWait() {
+		WebDriverWait wait= new WebDriverWait(driver,Constants.timeInt);
+		
+	}*/
 	
 	public By Locator(String type, String value) {
 		By by;
@@ -97,6 +104,10 @@ public class Reusable {
 	public String getTitle()
 	{
 		return driver.getTitle();
+	}
+	
+	public void verifyTitle(String message) {
+		Assert.assertEquals(driver.getTitle(), message);
 	}
 	
 	//verify

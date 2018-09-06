@@ -42,7 +42,7 @@ public class ApplicationTest {
        
 	}	
 	
-	//Login
+	/*//Login
 	@DataProvider(name = "LoginSheetData")	  
 	 public Object[][] loginData() throws IOException 
 	{		
@@ -57,7 +57,7 @@ public class ApplicationTest {
 		loginPage.login(email, password);
 	}	
 	
-	
+	*/
 	@BeforeTest
 	public void beforeTest() {	
 		String driverPath=Constants.chromeDriverPath;

@@ -15,6 +15,8 @@ public class GetExcelData {
 	
 public String[][] getData(String path,String sheetName) {
 	
+	System.out.println("Inside Get Excel:"+path+sheetName);
+	
 	String[][] data = null;
 		
 	try {
@@ -25,6 +27,7 @@ public String[][] getData(String path,String sheetName) {
         XSSFRow row; 
         int rows=sheet.getLastRowNum();
         int cols=sheet.getRow(0).getPhysicalNumberOfCells();
+        System.out.println("Rows: "+rows+"Cols: "+cols);
         data = new String[rows][cols];
         for(int i=0;i<rows;i++)
         {
@@ -40,6 +43,8 @@ public String[][] getData(String path,String sheetName) {
 	} catch (IOException e) {
 		log.error("Error reading excel file",e);
 	}
+	
+	System.out.println("Data: "+data);
 	 return data;
 }
 

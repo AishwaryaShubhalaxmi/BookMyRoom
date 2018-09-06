@@ -8,96 +8,44 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num attn">1</td><td class="num attn">20</td><td class="num">6,643</td><td></td><td></td></tr>
+<tr><th colspan="7">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">4</td><td class="num">0</td><td class="num attn">1</td><td class="num">31,509</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="20">com.bookmyroom.testng.ApplicationTest</td><td><a href="#m0">signUpTest</a></td><td rowspan="20">1535459831052</td><td rowspan="20">2</td></tr><tr class="failedeven"><td><a href="#m1">signUpTest</a></td></tr><tr class="failedeven"><td><a href="#m2">signUpTest</a></td></tr><tr class="failedeven"><td><a href="#m3">signUpTest</a></td></tr><tr class="failedeven"><td><a href="#m4">signUpTest</a></td></tr><tr class="failedeven"><td><a href="#m5">signUpTest</a></td></tr><tr class="failedeven"><td><a href="#m6">signUpTest</a></td></tr><tr class="failedeven"><td><a href="#m7">signUpTest</a></td></tr><tr class="failedeven"><td><a href="#m8">signUpTest</a></td></tr><tr class="failedeven"><td><a href="#m9">signUpTest</a></td></tr><tr class="failedeven"><td><a href="#m10">signUpTest</a></td></tr><tr class="failedeven"><td><a href="#m11">signUpTest</a></td></tr><tr class="failedeven"><td><a href="#m12">signUpTest</a></td></tr><tr class="failedeven"><td><a href="#m13">signUpTest</a></td></tr><tr class="failedeven"><td><a href="#m14">signUpTest</a></td></tr><tr class="failedeven"><td><a href="#m15">signUpTest</a></td></tr><tr class="failedeven"><td><a href="#m16">signUpTest</a></td></tr><tr class="failedeven"><td><a href="#m17">signUpTest</a></td></tr><tr class="failedeven"><td><a href="#m18">signUpTest</a></td></tr><tr class="failedeven"><td><a href="#m19">signUpTest</a></td></tr><tr><th colspan="4">Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.bookmyroom.testng.ApplicationTest</td><td><a href="#m20">loginTest</a></td><td rowspan="1">1535459830631</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.bookmyroom.testng.ApplicationTest</td><td><a href="#m0">signUpTest</a></td><td rowspan="1">1536210994291</td><td rowspan="1">105</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">com.bookmyroom.testng.ApplicationTest</td><td><a href="#m1">signUpTest</a></td><td rowspan="4">1536211009228</td><td rowspan="4">4075</td></tr><tr class="passedeven"><td><a href="#m2">signUpTest</a></td></tr><tr class="passedeven"><td><a href="#m3">signUpTest</a></td></tr><tr class="passedeven"><td><a href="#m4">signUpTest</a></td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">com.bookmyroom.testng.ApplicationTest#signUpTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><th colspan="7">Exception</th></tr><tr><td colspan="7"><div class="stacktrace">java.lang.NullPointerException
-	at com.bookmyroom.pages.SignUpPage.signUp(SignUpPage.java:25)
+<h2>Default test</h2><h3 id="m0">com.bookmyroom.testng.ApplicationTest#signUpTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr><tr class="param stripe"><td>TestCase_SignUp_1</td><td>Nikhil Reddy</td><td>nikhilreddyaileni@gmail.com</td><td>Aa1</td><td>Qwerty#123</td><td>Male</td><td>22</td><td>9490222395</td></tr><tr><th colspan="8">Exception</th></tr><tr><td colspan="8"><div class="stacktrace">java.lang.NullPointerException
+	at com.bookmyroom.util.Reusable.navigateTo(Reusable.java:37)
+	at com.bookmyroom.pages.SignUpPage.signUp(SignUpPage.java:42)
 	at com.bookmyroom.testng.ApplicationTest.signUpTest(ApplicationTest.java:41)
-... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.bookmyroom.testng.ApplicationTest#signUpTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>TestCase_SignUp_2</td><td>Nikhil Reddy</td><td>nikhilreddyaileni@gmail.com</td><td>Qwerty#123</td><td>Male</td><td>22</td><td>9490222395</td></tr><tr><th colspan="7">Exception</th></tr><tr><td colspan="7"><div class="stacktrace">java.lang.NullPointerException
-	at com.bookmyroom.pages.SignUpPage.signUp(SignUpPage.java:25)
-	at com.bookmyroom.testng.ApplicationTest.signUpTest(ApplicationTest.java:41)
-... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.bookmyroom.testng.ApplicationTest#signUpTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><th colspan="7">Exception</th></tr><tr><td colspan="7"><div class="stacktrace">java.lang.NullPointerException
-	at com.bookmyroom.pages.SignUpPage.signUp(SignUpPage.java:25)
-	at com.bookmyroom.testng.ApplicationTest.signUpTest(ApplicationTest.java:41)
-... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.bookmyroom.testng.ApplicationTest#signUpTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><th colspan="7">Exception</th></tr><tr><td colspan="7"><div class="stacktrace">java.lang.NullPointerException
-	at com.bookmyroom.pages.SignUpPage.signUp(SignUpPage.java:25)
-	at com.bookmyroom.testng.ApplicationTest.signUpTest(ApplicationTest.java:41)
-... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.bookmyroom.testng.ApplicationTest#signUpTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><th colspan="7">Exception</th></tr><tr><td colspan="7"><div class="stacktrace">java.lang.NullPointerException
-	at com.bookmyroom.pages.SignUpPage.signUp(SignUpPage.java:25)
-	at com.bookmyroom.testng.ApplicationTest.signUpTest(ApplicationTest.java:41)
-... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.bookmyroom.testng.ApplicationTest#signUpTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>TestCase_SignUp_5</td><td>Nikhil Reddy</td><td>nikhilreddyaileni@gmail.com</td><td>Qwerty#123</td><td>Male</td><td>22</td><td>9490222395</td></tr><tr><th colspan="7">Exception</th></tr><tr><td colspan="7"><div class="stacktrace">java.lang.NullPointerException
-	at com.bookmyroom.pages.SignUpPage.signUp(SignUpPage.java:25)
-	at com.bookmyroom.testng.ApplicationTest.signUpTest(ApplicationTest.java:41)
-... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">com.bookmyroom.testng.ApplicationTest#signUpTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><th colspan="7">Exception</th></tr><tr><td colspan="7"><div class="stacktrace">java.lang.NullPointerException
-	at com.bookmyroom.pages.SignUpPage.signUp(SignUpPage.java:25)
-	at com.bookmyroom.testng.ApplicationTest.signUpTest(ApplicationTest.java:41)
-... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">com.bookmyroom.testng.ApplicationTest#signUpTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>TestCase_SignUp_1</td><td>Nikhil Reddy</td><td>nikhilreddyaileni@gmail.com</td><td>Qwerty#123</td><td>Male</td><td>22</td><td>9490222395</td></tr><tr><th colspan="7">Exception</th></tr><tr><td colspan="7"><div class="stacktrace">java.lang.NullPointerException
-	at com.bookmyroom.pages.SignUpPage.signUp(SignUpPage.java:25)
-	at com.bookmyroom.testng.ApplicationTest.signUpTest(ApplicationTest.java:41)
-... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">com.bookmyroom.testng.ApplicationTest#signUpTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>TestCase_SignUp_3</td><td>Nikhil Reddy</td><td>nikhilreddyaileni@gmail.com</td><td>Qwerty#123</td><td>Male</td><td>22</td><td>9490222395</td></tr><tr><th colspan="7">Exception</th></tr><tr><td colspan="7"><div class="stacktrace">java.lang.NullPointerException
-	at com.bookmyroom.pages.SignUpPage.signUp(SignUpPage.java:25)
-	at com.bookmyroom.testng.ApplicationTest.signUpTest(ApplicationTest.java:41)
-... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m9">com.bookmyroom.testng.ApplicationTest#signUpTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><th colspan="7">Exception</th></tr><tr><td colspan="7"><div class="stacktrace">java.lang.NullPointerException
-	at com.bookmyroom.pages.SignUpPage.signUp(SignUpPage.java:25)
-	at com.bookmyroom.testng.ApplicationTest.signUpTest(ApplicationTest.java:41)
-... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m10">com.bookmyroom.testng.ApplicationTest#signUpTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><th colspan="7">Exception</th></tr><tr><td colspan="7"><div class="stacktrace">java.lang.NullPointerException
-	at com.bookmyroom.pages.SignUpPage.signUp(SignUpPage.java:25)
-	at com.bookmyroom.testng.ApplicationTest.signUpTest(ApplicationTest.java:41)
-... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m11">com.bookmyroom.testng.ApplicationTest#signUpTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><th colspan="7">Exception</th></tr><tr><td colspan="7"><div class="stacktrace">java.lang.NullPointerException
-	at com.bookmyroom.pages.SignUpPage.signUp(SignUpPage.java:25)
-	at com.bookmyroom.testng.ApplicationTest.signUpTest(ApplicationTest.java:41)
-... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m12">com.bookmyroom.testng.ApplicationTest#signUpTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><th colspan="7">Exception</th></tr><tr><td colspan="7"><div class="stacktrace">java.lang.NullPointerException
-	at com.bookmyroom.pages.SignUpPage.signUp(SignUpPage.java:25)
-	at com.bookmyroom.testng.ApplicationTest.signUpTest(ApplicationTest.java:41)
-... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m13">com.bookmyroom.testng.ApplicationTest#signUpTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><th colspan="7">Exception</th></tr><tr><td colspan="7"><div class="stacktrace">java.lang.NullPointerException
-	at com.bookmyroom.pages.SignUpPage.signUp(SignUpPage.java:25)
-	at com.bookmyroom.testng.ApplicationTest.signUpTest(ApplicationTest.java:41)
-... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m14">com.bookmyroom.testng.ApplicationTest#signUpTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><th colspan="7">Exception</th></tr><tr><td colspan="7"><div class="stacktrace">java.lang.NullPointerException
-	at com.bookmyroom.pages.SignUpPage.signUp(SignUpPage.java:25)
-	at com.bookmyroom.testng.ApplicationTest.signUpTest(ApplicationTest.java:41)
-... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m15">com.bookmyroom.testng.ApplicationTest#signUpTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><th colspan="7">Exception</th></tr><tr><td colspan="7"><div class="stacktrace">java.lang.NullPointerException
-	at com.bookmyroom.pages.SignUpPage.signUp(SignUpPage.java:25)
-	at com.bookmyroom.testng.ApplicationTest.signUpTest(ApplicationTest.java:41)
-... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m16">com.bookmyroom.testng.ApplicationTest#signUpTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><th colspan="7">Exception</th></tr><tr><td colspan="7"><div class="stacktrace">java.lang.NullPointerException
-	at com.bookmyroom.pages.SignUpPage.signUp(SignUpPage.java:25)
-	at com.bookmyroom.testng.ApplicationTest.signUpTest(ApplicationTest.java:41)
-... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m17">com.bookmyroom.testng.ApplicationTest#signUpTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><th colspan="7">Exception</th></tr><tr><td colspan="7"><div class="stacktrace">java.lang.NullPointerException
-	at com.bookmyroom.pages.SignUpPage.signUp(SignUpPage.java:25)
-	at com.bookmyroom.testng.ApplicationTest.signUpTest(ApplicationTest.java:41)
-... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m18">com.bookmyroom.testng.ApplicationTest#signUpTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><th colspan="7">Exception</th></tr><tr><td colspan="7"><div class="stacktrace">java.lang.NullPointerException
-	at com.bookmyroom.pages.SignUpPage.signUp(SignUpPage.java:25)
-	at com.bookmyroom.testng.ApplicationTest.signUpTest(ApplicationTest.java:41)
-... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m19">com.bookmyroom.testng.ApplicationTest#signUpTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>TestCase_SignUp_4</td><td>Nikhil Reddy</td><td>nikhilreddyaileni@gmail.com</td><td>Qwerty#123</td><td>Male</td><td>22</td><td>9490222395</td></tr><tr><th colspan="7">Exception</th></tr><tr><td colspan="7"><div class="stacktrace">java.lang.NullPointerException
-	at com.bookmyroom.pages.SignUpPage.signUp(SignUpPage.java:25)
-	at com.bookmyroom.testng.ApplicationTest.signUpTest(ApplicationTest.java:41)
-... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m20">com.bookmyroom.testng.ApplicationTest#loginTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: java.lang.NullPointerException
-Caused by: java.lang.NullPointerException
-	at com.bookmyroom.util.GetExcelData.getData(GetExcelData.java:28)
-	at com.bookmyroom.testng.ApplicationTest.loginData(ApplicationTest.java:49)
-	... 22 more
-... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.bookmyroom.testng.ApplicationTest#signUpTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr><tr class="param stripe"><td>TestCase_SignUp_3</td><td>Nikhil Reddy</td><td>nikhilreddyaileni@gmail.com</td><td>Aa3</td><td>Qwerty#123</td><td>Male</td><td>22</td><td>9490222395</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.bookmyroom.testng.ApplicationTest#signUpTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr><tr class="param stripe"><td>TestCase_SignUp_4</td><td>Nikhil Reddy</td><td>nikhilreddyaileni@gmail.com</td><td>Aa4</td><td>Qwerty#123</td><td>Male</td><td>22</td><td>9490222395</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.bookmyroom.testng.ApplicationTest#signUpTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr><tr class="param stripe"><td>TestCase_SignUp_5</td><td>Nikhil Reddy</td><td>nikhilreddyaileni@gmail.com</td><td>Aa5</td><td>Qwerty#123</td><td>Male</td><td>22</td><td>9490222395</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.bookmyroom.testng.ApplicationTest#signUpTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr><tr class="param stripe"><td>TestCase_SignUp_2</td><td>Nikhil Reddy</td><td>nikhilreddyaileni@gmail.com</td><td>Aa2</td><td>Qwerty#123</td><td>Male</td><td>22</td><td>9490222395</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

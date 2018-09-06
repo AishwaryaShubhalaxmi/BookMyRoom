@@ -15,7 +15,7 @@ public class LoginPage {
 	util=new Reusable(driver);
 	}
 	
-	public void login(String email,String password)
+	public void login(String username,String password)
 	{
 		String data[][];
 		
@@ -30,8 +30,11 @@ public class LoginPage {
         		util.navigateTo(data[i][Constants.parameter_col]);
         		break;
         		
-        	case "enterEmail":
-        		util.enterText(data[i][Constants.pathType_col],data[i][Constants.path_col],email);
+        	case "clickLogin":
+        		util.click(data[i][Constants.pathType_col], data[i][Constants.path_col]);
+        		
+        	case "enterUsername":
+        		util.enterText(data[i][Constants.pathType_col],data[i][Constants.path_col],username);
         	    break;
         		
         	case "enterPassword":
